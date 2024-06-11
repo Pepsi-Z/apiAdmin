@@ -1,0 +1,63 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" class="form-control" name="row[title]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Begindate')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-beginDate" data-rule="required" class="form-control" name="row[beginDate]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Enddate')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-endDate" data-rule="required" class="form-control" name="row[endDate]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Actionschema')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-actionSchema" data-rule="required" class="form-control" name="row[actionSchema]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Actionweekday')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-actionWeekDay" class="form-control" name="row[actionWeekDay]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Computermode')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-computerMode" data-rule="required" class="form-control" name="row[computerMode]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Executetime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-executeTime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[executeTime]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Offsettime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-offsetTime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[offsetTime]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Crontab_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-crontab_id" data-rule="required" data-source="crontab/index" class="form-control selectpage" name="row[crontab_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>

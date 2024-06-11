@@ -1,0 +1,111 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Deviceid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-deviceId" class="form-control" name="row[deviceId]" type="text" value="{$row.deviceId|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Phasebroken')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-phaseBroken" class="form-control" name="row[phaseBroken]" type="number" value="{$row.phaseBroken|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Highvoltagea')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-highVoltageA" class="form-control" name="row[highVoltageA]" type="number" value="{$row.highVoltageA|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lowvoltagea')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lowVoltageA" class="form-control" name="row[lowVoltageA]" type="number" value="{$row.lowVoltageA|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Highvoltageb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-highVoltageB" class="form-control" name="row[highVoltageB]" type="number" value="{$row.highVoltageB|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lowvoltageb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lowVoltageB" class="form-control" name="row[lowVoltageB]" type="number" value="{$row.lowVoltageB|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Highvoltagec')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-highVoltageC" class="form-control" name="row[highVoltageC]" type="number" value="{$row.highVoltageC|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lowvoltagec')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lowVoltageC" class="form-control" name="row[lowVoltageC]" type="number" value="{$row.lowVoltageC|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Highcurrenta')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-highCurrentA" class="form-control" name="row[highCurrentA]" type="number" value="{$row.highCurrentA|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Highcurrentb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-highCurrentB" class="form-control" name="row[highCurrentB]" type="number" value="{$row.highCurrentB|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Highcurrentc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-highCurrentC" class="form-control" name="row[highCurrentC]" type="number" value="{$row.highCurrentC|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Highad1voltage')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-highAd1Voltage" class="form-control" name="row[highAd1Voltage]" type="number" value="{$row.highAd1Voltage|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lowad1voltage')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lowAd1Voltage" class="form-control" name="row[lowAd1Voltage]" type="number" value="{$row.lowAd1Voltage|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Highad2voltage')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-highAd2Voltage" class="form-control" name="row[highAd2Voltage]" type="number" value="{$row.highAd2Voltage|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lowad2voltage')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lowAd2Voltage" class="form-control" name="row[lowAd2Voltage]" type="number" value="{$row.lowAd2Voltage|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Oc1')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-oc1" class="form-control" name="row[oc1]" type="number" value="{$row.oc1|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Oc2')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-oc2" class="form-control" name="row[oc2]" type="number" value="{$row.oc2|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>

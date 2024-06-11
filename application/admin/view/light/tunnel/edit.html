@@ -1,0 +1,57 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="{$row.title|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Tunnel_number')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tunnel_number" data-rule="required" class="form-control" name="row[tunnel_number]" type="text" value="{$row.tunnel_number|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('City')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-city" data-rule="required" class="form-control" data-toggle="city-picker" name="row[city]" type="text" value="{$row.city|htmlentities}"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Stake_mark_start')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-stake_mark_start" data-rule="required" class="form-control" name="row[stake_mark_start]" type="text" value="{$row.stake_mark_start|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Stake_mark_end')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-stake_mark_end" data-rule="required" class="form-control" name="row[stake_mark_end]" type="text" value="{$row.stake_mark_end|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Endlong')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-endlong" data-rule="required" class="form-control" name="row[endlong]" type="text" value="{$row.endlong|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Direction')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-direction" data-rule="required" class="form-control" name="row[direction]" type="text" value="{$row.direction|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Operationtime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-operationtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[operationtime]" type="text" value="{:$row.operationtime?datetime($row.operationtime):''}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>
